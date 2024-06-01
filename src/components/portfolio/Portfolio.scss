@@ -15,8 +15,8 @@
 
         @include mobile {
             // !CAN'T USE BOTTOM 0 SINCE IT WILL THEN ONLY BE VISIBLE AT THE LAST SECTION
-            padding-top: calc(100vh - 100px);
-            font-size: 24px;
+            padding-top: calc(100vh - 100px) !important;
+            font-size: 24px !important;
         }
 
         .progressBar {
@@ -44,8 +44,8 @@
             gap: 50px;
 
             @include mobile {
-                flex-direction: column;
-                gap: 10px;
+                flex-direction: column !important;
+                gap: 10px !important;
             }
 
             @include tablet {
@@ -60,9 +60,9 @@
                 height: 50%;
 
                 @include mobile {
-                    width: 100%;
-                    height: 100%;
-                    max-height: 300px;
+                    width: 100% !important;
+                    height: 100% !important;
+                    max-height: 300px !important;
                 }
 
                 img {
@@ -71,7 +71,7 @@
                     object-fit: contain;
 
                     @include mobile {
-                        object-fit: contain;
+                        object-fit: contain !important;
                     }
                 }
             }
@@ -84,9 +84,9 @@
 
                 @include mobile {
                     transform: none !important;
-                    padding: 10px;
-                    align-items: center;
-                    text-align: center;
+                    padding: 10px !important;
+                    align-items: center !important;
+                    text-align: center !important;
                 }
 
                 @include tablet {
@@ -100,7 +100,7 @@
                     font-size: 72px;
 
                     @include mobile {
-                        font-size: 36px;
+                        font-size: 36px !important;
                     }
                 }
 
@@ -109,7 +109,7 @@
                     font-size: 20px;
 
                     @include mobile {
-                        font-size: 16px;
+                        font-size: 16px !important;
                     }
                 }
 
@@ -121,7 +121,14 @@
                     width: 200px;
                     cursor: pointer;
 
-                    @include tablet{
+                    @include mobile {
+                        width: 300px !important;
+                        height: 50px !important;
+                        font-size: 20px !important;
+                        font-weight: bold !important;
+                    }
+
+                    @include tablet {
                         width: 400px;
                         height: 50px;
                         font-size: 20px;

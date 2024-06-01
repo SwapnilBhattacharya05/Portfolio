@@ -15,7 +15,6 @@
     @include tablet {
         transform: none !important;
         // justify-content: space-;
-        height: 100%;
     }
 
     .textContainer {
@@ -26,9 +25,9 @@
         gap: 20px;
 
         @include mobile {
-            align-self: center;
-            text-align: center;
-            flex-direction: column;
+            align-self: center !important;
+            text-align: center !important;
+            flex-direction: column !important;
         }
 
         hr {
@@ -37,7 +36,7 @@
             border-top: 0.5px solid gray;
 
             @include mobile {
-                width: 300px;
+                width: 300px !important;
             }
         }
 
@@ -58,7 +57,7 @@
         align-items: center;
 
         @include mobile {
-            width: 100%;
+            width: 100% !important;
         }
 
         @include tablet {
@@ -72,9 +71,9 @@
             gap: 50px;
 
             @include mobile {
-                flex-direction: column;
-                text-align: center;
-                gap: 20px;
+                flex-direction: column !important;
+                text-align: center !important;
+                gap: 20px !important;
             }
 
             @include tablet {
@@ -89,8 +88,8 @@
                 object-fit: cover;
 
                 @include mobile {
-                    width: 200px;
-                    height: 50px;
+                    width: 200px !important;
+                    height: 50px !important;
                 }
 
                 @include tablet {
@@ -104,7 +103,7 @@
                 font-weight: 100;
 
                 @include mobile {
-                    font-size: 30px;
+                    font-size: 30px !important;
                 }
 
                 @include tablet {
@@ -122,9 +121,9 @@
                 cursor: pointer;
 
                 @include mobile {
-                    font-size: 16px;
-                    width: 150px;
-                    height: 40px;
+                    font-size: 16px !important;
+                    width: 150px !important;
+                    height: 40px !important;
                 }
 
                 @include tablet {
@@ -143,9 +142,9 @@
 
 
         @include mobile {
-            flex-direction: column;
-            width: 100%;
-            font-size: 10px;
+            flex-direction: column !important;
+            width: 100% !important;
+            font-size: 10px !important;
         }
 
         @include tablet {
@@ -166,8 +165,11 @@
                 display: flex;
                 align-items: center;
 
+                @include mobile{
+                    justify-content: center !important;
+                }
+
                 @include tablet {
-                    width: 100%;
                     justify-content: space-around;
                 }
 
@@ -176,8 +178,8 @@
                     width: 50px;
 
                     @include mobile {
-                        height: 20px;
-                        width: 20px;
+                        height: 20px !important;
+                        width: 20px !important;
                     }
 
 
@@ -185,9 +187,9 @@
             }
 
             @include mobile {
-                border: none;
-                align-items: center;
-                padding: 10px;
+                border: none !important;
+                align-items: center !important;
+                padding: 10px !important;
             }
 
             @include tablet {
@@ -197,7 +199,7 @@
 
             p {
                 @include mobile {
-                    display: none;
+                    display: none !important;
                 }
 
                 @include tablet {
@@ -212,12 +214,12 @@
                 border: none;
 
                 @include mobile {
-                    background-color: transparent;
-                    border: 1px solid orange;
-                    border-radius: 5px;
-                    color: orange;
-                    width: 50%;
-                    padding: 5px;
+                    background-color: transparent !important;
+                    border: 1px solid orange !important;
+                    border-radius: 5px !important;
+                    color: orange !important;
+                    width: 50% !important;
+                    padding: 5px !important;
                 }
             }
         }
