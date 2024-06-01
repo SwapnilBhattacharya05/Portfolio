@@ -75,8 +75,8 @@ const Hero = () => {
                             See the Latest Works
                         </motion.button>
                         <motion.button variants={textVariants}
-                        whileHover={{ backgroundColor: "white", color: "black" }}
-                        onClick={() => { window.location.href = "#Contact" }}>
+                            whileHover={{ backgroundColor: "white", color: "black" }}
+                            onClick={() => { window.location.href = "#Contact" }}>
                             Contact Me
                         </motion.button>
                     </div>

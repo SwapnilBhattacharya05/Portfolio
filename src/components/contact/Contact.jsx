@@ -20,8 +20,6 @@ const variants = {
     },
 }
 
-
-
 const Contact = () => {
     const ref = useRef()
     const formRef = useRef()

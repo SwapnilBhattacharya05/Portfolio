@@ -17,6 +17,10 @@
             font-size: 72px;
             text-align: center;
         }
+
+        @include tablet {
+            font-size: 90px;
+        }
     }
 
     .mountains {
@@ -29,6 +33,11 @@
         z-index: 3;
 
         @include mobile {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        @include tablet {
             background-size: contain;
             background-repeat: no-repeat;
         }
@@ -47,6 +56,11 @@
             background-size: contain;
             background-repeat: no-repeat;
         }
+
+        @include tablet {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 
     .stars {
@@ -57,6 +71,6 @@
         width: 100%;
         position: absolute;
         z-index: 1;
-    
+
     }
 }
