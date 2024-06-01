@@ -83,7 +83,7 @@
                 font-weight: 100;
 
                 @include mobile {
-                    font-size: 36px;
+                    font-size: 30px;
                 }
             }
 
@@ -99,7 +99,7 @@
                 @include mobile {
                     font-size: 16px;
                     width: 150px;
-                    height: 50px;
+                    height: 40px;
                 }
             }
         }
@@ -115,13 +115,31 @@
         @include mobile {
             flex-direction: column;
             width: 100%;
+            font-size: 10px;
         }
 
         .box {
             border: 0.5px solid gray;
-            padding: 50px;
+            padding: 45px;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
+            gap: 21px;
+
+            .wrapper {
+                display: flex;
+                align-items: center;
+
+                img {
+                    height: 50px;
+                    width: 50px;
+
+                    @include mobile{
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            }
 
             @include mobile {
                 border: none;

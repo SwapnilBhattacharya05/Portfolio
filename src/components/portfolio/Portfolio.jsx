@@ -5,27 +5,31 @@ import { motion, useScroll, useSpring, useTransform } from 'framer-motion'
 const items = [
     {
         id: 1,
-        title: "Portfolio 1",
-        img: "https://images.pexels.com/photos/7566369/pexels-photo-7566369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis molestiae quos commodi in veritatis, expedita vitae maxime tenetur soluta neque magni quia laboriosam natus velit dolores modi cum. Assumenda, sed.",
+        title: "Real Estate",
+        img: "/img/portfolio1.png",
+        desc: "A Real Estate Website Created using MERN for minor project, where you can buy, sell, and rent properties. Using Firebase for google authentication making it easier for users to sign in or create an account.",
+        link: "https://ghar-dekho.netlify.app/"
     },
     {
         id: 2,
-        title: "Portfolio 2",
-        img: "https://images.pexels.com/photos/21287032/pexels-photo-21287032/free-photo-of-the-city-of-arts-and-sciences-in-valencia-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis molestiae quos commodi in veritatis, expedita vitae maxime tenetur soluta neque magni quia laboriosam natus velit dolores modi cum. Assumenda, sed.",
+        title: "Tours and Travel",
+        img: "/img/portfolio2.png",
+        desc: "A tour and travel website using which users can book tour packages in India both domestic and international packages. Created During Summer Internship at Ardent Computech Pvt Ltd.",
+        link: "https://wanderlust-wonders.netlify.app/"
     },
     {
         id: 3,
-        title: "Portfolio 3",
-        img: "https://images.pexels.com/photos/6229780/pexels-photo-6229780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis molestiae quos commodi in veritatis, expedita vitae maxime tenetur soluta neque magni quia laboriosam natus velit dolores modi cum. Assumenda, sed.",
+        title: "Food Ordering ",
+        img: "/img/portfolio3.png",
+        desc: "A Food Ordering Website Created using MERN for major project, where you can order food and advertise your restaurant. Using Firebase for google authentication making it easier for users to sign in or create an account, MUI along with Bootstrap is used for creating the UI.",
+        link: "https://foodzie.freewebhostmost.com/"
     },
     {
         id: 4,
-        title: "Portfolio 4",
-        img: "https://images.pexels.com/photos/15154326/pexels-photo-15154326/free-photo-of-red-armchairs-in-the-ferry-boat.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis molestiae quos commodi in veritatis, expedita vitae maxime tenetur soluta neque magni quia laboriosam natus velit dolores modi cum. Assumenda, sed.",
+        title: "Music App",
+        img: "img/portfolio4.png",
+        desc: "Music App Created using basic HTML CSS JS.  Allows to seamlessly play songs across devices, whether on desktop, tablet, or smartphone. Intuitive controls for play, pause, skip, and volume adjustment.",
+        link: "https://zentune.freewebhostmost.com/"
     },
 ];
 
@@ -48,7 +52,7 @@ const Single = ({ item }) => {
                     <motion.div className="textContainer" style={{ y }}>
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
-                        <button>See Demo</button>
+                        <button onClick={() => window.open(item.link, "_blank")}>See Demo</button>
                     </motion.div>
                 </div>
             </div>

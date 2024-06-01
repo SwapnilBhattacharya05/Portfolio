@@ -43,8 +43,8 @@ const Services = () => {
                 variants={variants}
             >
                 <p>
-                    I focus on helping your brand grow
-                    <br /> and move forward
+                    I Focus on Developing and
+                    <br />Learning Everyday
                 </p>
                 <hr />
             </motion.div>
@@ -53,7 +53,7 @@ const Services = () => {
                 variants={variants}
             >
                 <div className="title">
-                    <img src="img/people.webp" alt="title" />
+                    <img src="https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2021_12_Programming-vs-Web-Development.jpg" alt="title" />
                     <h1>
                         <motion.b whileHover={{ color: "orange" }}>Unique</motion.b>&nbsp;Ideas
                     </h1>
@@ -61,9 +61,10 @@ const Services = () => {
 
                 <div className="title">
                     <h1>
-                        <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>&nbsp;Business.
+                        <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>&nbsp;Website.
                     </h1>
-                    <button>WHAT I DO?</button>
+                    <button
+                        onClick={() => window.open("https://github.com/SwapnilBhattacharya05?tab=repositories", "_blank")}>MY BUILDS?</button>
                 </div>
             </motion.div>
 
@@ -75,45 +76,83 @@ const Services = () => {
                         background: "lightgray",
                         color: "black"
                     }}>
-                    <h2>Branding</h2>
+                    <div className="wrapper">
+                        <img id='vite'
+                            src="/vite.svg"
+                            alt="vite"
+                            style={{
+                                filter: "drop-shadow(0px 0px 15px rgba(241, 85, 241, 0.455)) drop-shadow(0px 0px 15px rgba(235, 235, 22, 0.395))"
+                            }}
+                        />
+                        <h2>Vite</h2>
+                    </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quia mollitia libero laborum, asperiores eveniet, dolores accusamus incidunt ad quasi distinctio nam magni ex ipsa explicabo cumque eaque voluptatem at.
+                        Vite + React: Fast builds, hot module replacement, and efficient bundling streamline React app development with minimal setup for high performance.
                     </p>
-                    <button>Go</button>
+                    <button onClick={() => window.open("https://vitejs.dev/", "_blank")}>Go</button>
                 </motion.div>
+
                 <motion.div className="box"
                     whileHover={{
                         background: "lightgray",
                         color: "black"
                     }}>
-                    <h2>Branding</h2>
+                    <div className="wrapper">
+                        <img id='framer'
+                            src="https://www.framer.com/images/favicons/favicon.png"
+                            alt="framer motion"
+                            style={{
+                                filter: "drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5)) drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.5))"
+                            }}
+                        />
+                        <h2>Motion</h2>
+                    </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quia mollitia libero laborum, asperiores eveniet, dolores accusamus incidunt ad quasi distinctio nam magni ex ipsa explicabo cumque eaque voluptatem at.
+                        Framer Motion: A React animation library with intuitive APIs, facilitating fluid and interactive user interface design for dynamic web applications.
                     </p>
-                    <button>Go</button>
+                    <button onClick={() => window.open("https://www.framer.com/motion/", "_blank")}>Go</button>
                 </motion.div>
+
                 <motion.div className="box"
                     whileHover={{
                         background: "lightgray",
                         color: "black"
                     }}>
-                    <h2>Branding</h2>
+                    <div className="wrapper">
+                        <img src="https://nodejs.org/static/images/favicons/favicon.png"
+                            alt="vite"
+                            style={{
+                                filter: "drop-shadow(0px 0px 15px rgba(0, 255, 0, 0.7)) drop-shadow(0px 0px 15px rgba(128, 0, 128, 0.5))"
+                            }}
+                        />
+                        <h2>Nodejs</h2>
+                    </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quia mollitia libero laborum, asperiores eveniet, dolores accusamus incidunt ad quasi distinctio nam magni ex ipsa explicabo cumque eaque voluptatem at.
+                        Node.js: JavaScript runtime for server-side execution, leveraging Chrome's V8 engine, with a rich ecosystem supporting scalable and efficient web applications.
                     </p>
-                    <button>Go</button>
+                    <button onClick={() => window.open("https://nodejs.org/en/", "_blank")}>Go</button>
                 </motion.div>
+
                 <motion.div className="box"
                     whileHover={{
                         background: "lightgray",
                         color: "black"
                     }}>
-                    <h2>Branding</h2>
+                    <div className="wrapper">
+                        <img src="https://www.mongodb.com/favicon.ico"
+                            alt="vite"
+                            style={{
+                                filter: "drop-shadow(0px 0px 15px rgba(0, 255, 0, 0.3)) drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5))"
+                            }}
+                        />
+                        <h2>MongoDB</h2>
+                    </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quia mollitia libero laborum, asperiores eveniet, dolores accusamus incidunt ad quasi distinctio nam magni ex ipsa explicabo cumque eaque voluptatem at.
+                        MongoDB: A NoSQL database renowned for its flexibility, scalability, and document-oriented structure, facilitating efficient storage and retrieval of data for modern applications.
                     </p>
-                    <button>Go</button>
+                    <button onClick={() => window.open("https://www.mongodb.com/", "_blank")}>Go</button>
                 </motion.div>
+
             </motion.div>
 
         </motion.div>

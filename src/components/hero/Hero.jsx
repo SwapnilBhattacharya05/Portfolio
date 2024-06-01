@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Hero.scss"
 import { motion } from 'framer-motion'
+import { fetchData } from '../../api/Github';
 
 const textVariants = {
     initial: {
@@ -40,6 +41,22 @@ const sliderVariants = {
 }
 
 const Hero = () => {
+    const [data, setData] = useState([])
+
+    const getLatest = async () => {
+        try {
+            const response = await fetchData()
+            setData(response)
+            console.log(response)
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    useEffect(() => {
+        getLatest()
+    }, [])
+
     return (
         <div className='hero'>
             <div className="wrapper">
@@ -51,10 +68,15 @@ const Hero = () => {
                     <motion.h2 variants={textVariants}>SWAPNIL BHATTACHARYA</motion.h2>
                     <motion.h1 variants={textVariants}>Full Stack Developer</motion.h1>
                     <div className="buttons">
-                        <motion.button variants={textVariants}>
+                        <motion.button variants={textVariants}
+                            onClick={() => {
+                                window.open(data[0].html_url, "_blank")
+                            }}>
                             See the Latest Works
                         </motion.button>
-                        <motion.button variants={textVariants}>
+                        <motion.button variants={textVariants}
+                        whileHover={{ backgroundColor: "white", color: "black" }}
+                        onClick={() => { window.location.href = "#Contact" }}>
                             Contact Me
                         </motion.button>
                     </div>

@@ -39,6 +39,7 @@ const Contact = () => {
             .then((result) => {
                 setSuccess(true)
                 setError(false)
+                console.log('SUCCESS...', result.text);
             }, (error) => {
                 setSuccess(false)
                 setError(true)
@@ -53,20 +54,21 @@ const Contact = () => {
             initial="initial"
             whileInView="animate">
             <motion.div className="textContainer" variants={variants}>
-                <motion.h1>Let's Build Together</motion.h1>
+                <motion.h1>Let's Work Together</motion.h1>
                 <motion.div className="item" variants={variants}>
                     <h2>Mail</h2>
                     <span>swapnilb050203@gmail.com</span>
                 </motion.div>
                 <motion.div className="item" variants={variants}>
-                    <h2>Address</h2>
-                    <span>Demo Address</span>
+                    <h2>Github</h2>
+                    <span>SwapnilBhattacharya05</span>
                 </motion.div>
                 <motion.div className="item" variants={variants}>
-                    <h2>Phone</h2>
-                    <span>Deno Phone</span>
+                    <h2>Twitter</h2>
+                    <span>@zeltrax15</span>
                 </motion.div>
             </motion.div>
+
             <div className="formContainer">
                 <motion.div className="phoneSvg"
                     initial={{ opacity: 1 }}
@@ -105,7 +107,7 @@ const Contact = () => {
                         name="email"
                     />
                     <textarea
-                        rows={8}
+                        rows={window.innerWidth < 738 ? 2 : 8}
                         placeholder='Message'
                         required
                         name="message"
