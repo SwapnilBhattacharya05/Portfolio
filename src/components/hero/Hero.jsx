@@ -47,7 +47,6 @@ const Hero = () => {
         try {
             const response = await fetchData()
             setData(response)
-            console.log(response)
         } catch (error) {
             console.log(error);
         }
