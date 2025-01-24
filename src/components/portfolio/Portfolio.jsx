@@ -26,10 +26,10 @@ const items = [
     },
     {
         id: 4,
-        title: "Music App",
-        img: "img/portfolio4.png",
-        desc: "Music App Created using basic HTML CSS JS.  Allows to seamlessly play songs across devices, whether on desktop, tablet, or smartphone. Intuitive controls for play, pause, skip, and volume adjustment.",
-        link: "https://zentune.freewebhostmost.com/"
+        title: "Zentry",
+        img: "img/portfolio4.jpeg",
+        desc: "Designed and developed an Awwwards website clone using Vite + React, GSAP for animation, and TailwindCss for quick styling.",
+        link: "https://awwwards-website-cloned.vercel.app/"
     },
 ];
 
